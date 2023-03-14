@@ -1,21 +1,5 @@
-function terminalLog(violations) {
-  cy.task(
-    'log',
-    `${violations.length} accessibility violation${violations.length === 1 ? '' : 's'
-    } ${violations.length === 1 ? 'was' : 'were'} detected`
-  )
-  // Retirar chaves específicas para manter a tabela legível
-  const violationData = violations.map(
-    ({ id, impact, description, nodes }) => ({
-      id,
-      impact,
-      description,
-      nodes: nodes.length
-    })
-  )
-
-  cy.task('table', violationData)
-}
+import { callback } from '../support/commands.js';
+import { terminalLog } from '../support/commands.js';
 
 // Testes...
 describe('Automação de Acessibilidade', () => {
@@ -38,7 +22,7 @@ describe('Automação de Acessibilidade', () => {
   });
 
   it('Verifica falha com impacto Sério ou Crítico', () => {
-    cy.checkA11y(null, { includedImpacts: ['critical', 'serious'] }, terminalLog);
+    cy.checkA11y(null, { includedImpacts: ['critical', 'serious'] }, callback);
   });
 
   it('Exclui os testes de contraste', () => {
