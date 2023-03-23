@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="center" src="https://user-images.githubusercontent.com/1204692/67787186-e5b8d700-fa4e-11e9-852a-999cf7683773.png"  alt="Cypress com integração com o axe" />
+  <img align="center" src="https://www.deque.com/wp-content/uploads/2015/06/aXeLogo-300x300.png"  alt="Cypress com integração com o axe" />
 </div>
 
 ***
