@@ -1,6 +1,4 @@
-<div align="center">
-  <img align="center" src="https://www.deque.com/wp-content/uploads/2015/06/aXeLogo-300x300.png"  alt="Cypress com integração com o axe" />
-</div>
+
 
 ***
 
