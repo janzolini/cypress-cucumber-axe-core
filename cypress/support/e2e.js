@@ -1,5 +1,5 @@
 // ***********************************************************
-// This example support/index.js is processed and
+// This example support/e2e.js is processed and
 // loaded automatically before your test files.
 //
 // This is a great place to put global configuration and
@@ -15,17 +15,4 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import 'cypress-axe'
-
-
-// const { configureAxe } = require('cypress-axe');
-
-// module.exports = (on, config) => {
-//     on('before:browser:launch', (browser, launchOptions) => {
-//         configureAxe({
-//             axeOptions: {
-//                 // configure as opções do axe a serem usadas nos testes
-//             },
-//         });
-//     });
-// };
+import 'cypress-axe';
